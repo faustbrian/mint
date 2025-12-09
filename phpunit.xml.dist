@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd"
+    colors="true"
+    cacheDirectory=".phpunit.cache">
+    <source>
+        <include>
+            <directory suffix=".php">./src/Contracts</directory>
+            <directory suffix=".php">./src/Encoders</directory>
+            <directory suffix=".php">./src/Enums</directory>
+            <directory suffix=".php">./src/Exceptions</directory>
+            <directory suffix=".php">./src/Generators</directory>
+            <directory suffix=".php">./src/Support</directory>
+            <file>./src/MintManager.php</file>
+            <file>./src/IdentifierBuilder.php</file>
+        </include>
+    </source>
+    <testsuites>
+        <testsuite name="default">
+            <directory suffix=".php">./tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
