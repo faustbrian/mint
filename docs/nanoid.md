@@ -1,8 +1,3 @@
----
-title: NanoID
-description: Generate compact, URL-safe, unique identifiers with customizable length and alphabet
----
-
 ## Overview
 
 NanoID is a tiny, secure, URL-friendly unique string ID generator. It uses cryptographically strong random values and is comparable to UUID in terms of collision probability but produces shorter, more URL-friendly strings.

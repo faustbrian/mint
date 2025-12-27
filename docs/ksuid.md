@@ -1,8 +1,3 @@
----
-title: KSUID
-description: Generate K-Sortable Unique Identifiers with high entropy
----
-
 ## Overview
 
 KSUIDs (K-Sortable Unique Identifiers) are 160-bit identifiers designed by Segment. They combine a 32-bit timestamp with 128 bits of random data, providing both sortability and high collision resistance.

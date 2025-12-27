@@ -1,8 +1,3 @@
----
-title: Hashid
-description: Encode and decode integers with salt-based obfuscation for unique outputs
----
-
 ## Overview
 
 Hashids is the original library for encoding integers into short, unique strings. Unlike Sqids (its successor), Hashids uses a salt to make outputs unique to your application - the same number with different salts produces different outputs.

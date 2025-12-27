@@ -1,8 +1,3 @@
----
-title: Getting Started
-description: Unified identifier generation for Laravel with UUIDs, ULIDs, Snowflakes, NanoIDs, and more
----
-
 ## Installation
 
 Install via Composer:

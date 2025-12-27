@@ -1,8 +1,3 @@
----
-title: Other Identifiers
-description: CUID2, XID, ObjectID, PushID, and Timeflake identifier types
----
-
 ## Overview
 
 Mint supports several additional identifier types for specialized use cases. Each provides unique characteristics suited to different scenarios.

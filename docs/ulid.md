@@ -1,8 +1,3 @@
----
-title: ULID
-description: Generate and parse Universally Unique Lexicographically Sortable Identifiers
----
-
 ## Overview
 
 ULIDs (Universally Unique Lexicographically Sortable Identifiers) are 128-bit identifiers that combine the uniqueness of UUIDs with lexicographic sortability. They consist of a 48-bit timestamp and 80 bits of randomness, encoded as a 26-character case-insensitive string using Crockford's Base32 alphabet.

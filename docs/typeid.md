@@ -1,8 +1,3 @@
----
-title: TypeID
-description: Generate type-safe, K-sortable identifiers with entity prefixes
----
-
 ## Overview
 
 TypeIDs are type-safe, K-sortable identifiers that combine a type prefix with a UUIDv7 suffix. The prefix makes IDs self-documenting - you can tell what kind of entity an ID refers to just by looking at it.

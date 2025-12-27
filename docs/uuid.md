@@ -1,8 +1,3 @@
----
-title: UUID
-description: Generate and parse Universally Unique Identifiers conforming to RFC 4122/9562
----
-
 ## Overview
 
 UUIDs (Universally Unique Identifiers) are 128-bit identifiers standardized in RFC 4122 and RFC 9562. Mint supports versions 1, 4, and 7, with version 7 recommended for most use cases due to its time-ordered sortability and database performance benefits.

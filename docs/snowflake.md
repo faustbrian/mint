@@ -1,8 +1,3 @@
----
-title: Snowflake
-description: Generate Twitter-style 64-bit distributed unique identifiers
----
-
 ## Overview
 
 Snowflake IDs are 64-bit, time-ordered identifiers originally designed by Twitter for distributed systems. They consist of a timestamp, node ID, and sequence number, allowing multiple machines to generate unique IDs without coordination.

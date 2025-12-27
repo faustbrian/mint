@@ -1,8 +1,3 @@
----
-title: Sqid
-description: Encode and decode integers to short, URL-safe strings with blocklist support
----
-
 ## Overview
 
 Sqids (pronounced "squids") is the successor to Hashids, providing a way to encode integers into short, URL-safe strings. Unlike random IDs, Sqids are deterministic and reversible - the same numbers always produce the same output, and you can decode them back to the original values.
