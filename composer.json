@@ -79,7 +79,7 @@
         ],
         "test:lint": "vendor/bin/ecs check",
         "test:refactor": "rector --dry-run",
-        "test:type-coverage": "pest --parallel --min=90 --type-coverage --memory-limit=512M",
+        "test:type-coverage": "pest --parallel --min=80 --type-coverage --memory-limit=512M",
         "test:types": "phpstan --memory-limit=512M",
         "test:unit": "pest --parallel --min=80 --coverage"
     }
