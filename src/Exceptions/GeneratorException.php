@@ -9,6 +9,9 @@
 
 namespace Cline\Mint\Exceptions;
 
+use Facade\IgnitionContracts\BaseSolution;
+use Facade\IgnitionContracts\ProvidesSolution;
+use Facade\IgnitionContracts\Solution;
 use RuntimeException;
 
 /**
@@ -27,7 +30,19 @@ use RuntimeException;
  *
  * @author Brian Faust <brian@cline.sh>
  */
-abstract class GeneratorException extends RuntimeException implements MintException
+abstract class GeneratorException extends RuntimeException implements MintException, ProvidesSolution
 {
     // Abstract base class - concrete implementations provide specific factory methods
+
+    public function getSolution(): Solution
+    {
+        /** @var BaseSolution $solution */
+        $solution = BaseSolution::create('Review package usage and configuration.');
+
+        return $solution
+            ->setSolutionDescription('Exception: '.$this->getMessage())
+            ->setDocumentationLinks([
+                'Package documentation' => 'https://github.com/cline/mint',
+            ]);
+    }
 }

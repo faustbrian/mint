@@ -6,7 +6,6 @@
     <source>
         <include>
             <directory suffix=".php">./src/Contracts</directory>
-            <directory suffix=".php">./src/Encoders</directory>
             <directory suffix=".php">./src/Enums</directory>
             <directory suffix=".php">./src/Exceptions</directory>
             <directory suffix=".php">./src/Generators</directory>
