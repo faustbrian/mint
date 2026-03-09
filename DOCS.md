@@ -1,15 +1,15 @@
 ## Table of Contents
 
-1. [Overview](#doc-docs-readme) (`docs/README.md`)
-2. [Hashid](#doc-docs-hashid) (`docs/hashid.md`)
-3. [Ksuid](#doc-docs-ksuid) (`docs/ksuid.md`)
-4. [Nanoid](#doc-docs-nanoid) (`docs/nanoid.md`)
-5. [Other Identifiers](#doc-docs-other-identifiers) (`docs/other-identifiers.md`)
-6. [Snowflake](#doc-docs-snowflake) (`docs/snowflake.md`)
-7. [Sqid](#doc-docs-sqid) (`docs/sqid.md`)
-8. [Typeid](#doc-docs-typeid) (`docs/typeid.md`)
-9. [Ulid](#doc-docs-ulid) (`docs/ulid.md`)
-10. [Uuid](#doc-docs-uuid) (`docs/uuid.md`)
+1. [Overview](#doc-docs-readme)
+2. [Hashid](#doc-docs-hashid)
+3. [Ksuid](#doc-docs-ksuid)
+4. [Nanoid](#doc-docs-nanoid)
+5. [Other Identifiers](#doc-docs-other-identifiers)
+6. [Snowflake](#doc-docs-snowflake)
+7. [Sqid](#doc-docs-sqid)
+8. [Typeid](#doc-docs-typeid)
+9. [Ulid](#doc-docs-ulid)
+10. [Uuid](#doc-docs-uuid)
 <a id="doc-docs-readme"></a>
 
 ## Installation
