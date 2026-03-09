@@ -1,15 +1,17 @@
 ## Table of Contents
 
-1. Overview (`docs/README.md`)
-2. Hashid (`docs/hashid.md`)
-3. Ksuid (`docs/ksuid.md`)
-4. Nanoid (`docs/nanoid.md`)
-5. Other Identifiers (`docs/other-identifiers.md`)
-6. Snowflake (`docs/snowflake.md`)
-7. Sqid (`docs/sqid.md`)
-8. Typeid (`docs/typeid.md`)
-9. Ulid (`docs/ulid.md`)
-10. Uuid (`docs/uuid.md`)
+1. [Overview](#doc-docs-readme) (`docs/README.md`)
+2. [Hashid](#doc-docs-hashid) (`docs/hashid.md`)
+3. [Ksuid](#doc-docs-ksuid) (`docs/ksuid.md`)
+4. [Nanoid](#doc-docs-nanoid) (`docs/nanoid.md`)
+5. [Other Identifiers](#doc-docs-other-identifiers) (`docs/other-identifiers.md`)
+6. [Snowflake](#doc-docs-snowflake) (`docs/snowflake.md`)
+7. [Sqid](#doc-docs-sqid) (`docs/sqid.md`)
+8. [Typeid](#doc-docs-typeid) (`docs/typeid.md`)
+9. [Ulid](#doc-docs-ulid) (`docs/ulid.md`)
+10. [Uuid](#doc-docs-uuid) (`docs/uuid.md`)
+<a id="doc-docs-readme"></a>
+
 ## Installation
 
 Install via Composer:
@@ -234,6 +236,8 @@ $internal = Mint::hashid()->salt(config('app.key'))->decode($public)[0];
 - **[TypeID](typeid)** - Type-prefixed sortable identifiers
 - **[KSUID](ksuid)** - K-Sortable unique identifiers
 - **[Other Identifiers](other-identifiers)** - CUID2, XID, ObjectID, PushID, Timeflake
+
+<a id="doc-docs-hashid"></a>
 
 ## Overview
 
@@ -601,6 +605,8 @@ Mint::hashid()->encode([-1]);        // Error
 | `getTimestamp()` | `null` | Always null |
 | `isSortable()` | `bool` | Always `false` |
 
+<a id="doc-docs-ksuid"></a>
+
 ## Overview
 
 KSUIDs (K-Sortable Unique Identifiers) are 160-bit identifiers designed by Segment. They combine a 32-bit timestamp with 128 bits of random data, providing both sortability and high collision resistance.
@@ -899,6 +905,8 @@ echo $created->format('Y-m-d H:i:s');
 | `getTimestamp()` | `int` | Unix timestamp in milliseconds |
 | `isSortable()` | `bool` | Always `true` |
 
+<a id="doc-docs-nanoid"></a>
+
 ## Overview
 
 NanoID is a tiny, secure, URL-friendly unique string ID generator. It uses cryptographically strong random values and is comparable to UUID in terms of collision probability but produces shorter, more URL-friendly strings.
@@ -1184,6 +1192,8 @@ class UrlShortener
 | `getTimestamp()` | `null` | Always null (random ID) |
 | `isSortable()` | `bool` | Always `false` |
 
+<a id="doc-docs-other-identifiers"></a>
+
 ## Overview
 
 Mint supports several additional identifier types for specialized use cases. Each provides unique characteristics suited to different scenarios.
@@ -1461,6 +1471,8 @@ All identifier objects support:
 | Method | Description |
 |--------|-------------|
 | `length(int $length)` | Set output length (10-32) |
+
+<a id="doc-docs-snowflake"></a>
 
 ## Overview
 
@@ -1748,6 +1760,8 @@ class EventService
 | `getNodeId()` | `int` | Node/machine identifier |
 | `getSequence()` | `int` | Sequence number within millisecond |
 | `isSortable()` | `bool` | Always returns `true` |
+
+<a id="doc-docs-sqid"></a>
 
 ## Overview
 
@@ -2069,6 +2083,8 @@ Mint::sqid()->encode([1.5]);       // Error
 | `toString()` | `string` | String representation |
 | `getTimestamp()` | `null` | Always null |
 | `isSortable()` | `bool` | Always `false` |
+
+<a id="doc-docs-typeid"></a>
 
 ## Overview
 
@@ -2425,6 +2441,8 @@ class Comment extends Model
 | `getTimestamp()` | `int` | Unix timestamp in milliseconds |
 | `isSortable()` | `bool` | Always `true` |
 
+<a id="doc-docs-ulid"></a>
+
 ## Overview
 
 ULIDs (Universally Unique Lexicographically Sortable Identifiers) are 128-bit identifiers that combine the uniqueness of UUIDs with lexicographic sortability. They consist of a 48-bit timestamp and 80 bits of randomness, encoded as a 26-character case-insensitive string using Crockford's Base32 alphabet.
@@ -2675,6 +2693,8 @@ $posts = Post::all()->sortBy(function ($post) {
 | `getBytes()` | `string` | 16-byte binary representation |
 | `getTimestamp()` | `int` | Unix timestamp in milliseconds |
 | `isSortable()` | `bool` | Always returns `true` |
+
+<a id="doc-docs-uuid"></a>
 
 ## Overview
 
